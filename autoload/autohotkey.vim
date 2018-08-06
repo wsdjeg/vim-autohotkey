@@ -235,8 +235,6 @@ let s:complete_dict = {
             \ "Gui, Add, ListView, Options, ColumnTitle1|ColumnTitle2|...\nA List-View is one of the most elaborate controls provided by the operating system. In its most recognizable form, it displays a tabular view of rows and columns, the most common example of which is Explorer's list of files and folders (detail view).</p>\n<p>Though it may be elaborate, a ListView's basic features are easy to use. The syntax for creating a ListView is:",
             \ 'Loop' :
             \ "Loop [, Count]\nPerform a series of commands repeatedly: either the specified number of times or until break is encountered.",
-            \ 'Loop' :
-            \ "Loop, FilePattern [, IncludeFolders?, Recurse?]\nLoop (parse a string)\nLoop, Read, InputFile [, OutputFile]\nLoop, RootKey [, Key, IncludeSubkeys?, Recurse?]\nRetrieves the specified files or folders, one at a time.\nRetrieves substrings (fields) from a string, one at a time.\nRetrieves the lines in a text file, one at a time (performs better than FileReadLine).\nRetrieves the contents of the specified registry subkey, one item at a time.",
             \ 'Menu' :
             \ "Menu, MenuName, Cmd [, P3, P4, P5]\nCreates, deletes, modifies and displays menus and menu items. Changes the tray icon and its tooltip. Controls whether the main window of a compiled script can be opened.",
             \ 'MouseClick' :
@@ -709,7 +707,6 @@ let s:complete_dict = {
             \ 'ahk_group': '',
             \ 'ahk_id': '',
             \ 'ahk_pid': '',
-            \ 'contained': '',
             \ 'contained': '',
             \ 'false': '',
             \ 'global': '',
