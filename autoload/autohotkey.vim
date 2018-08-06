@@ -1,7 +1,7 @@
 let s:complete_dict = {
             \ 'AutoTrim' :
-            \ 'AutoTrim, On|Off\nDetermines whether <a href="SetEnv.htm">Var1 = %Var2%</a> statements omit spaces and tabs from the beginning and end of Var2.',
-            \ "Blocks" :
+            \ "AutoTrim, On|Off\nDetermines whether <a href=\"SetEnv.htm\">Var1 = %Var2%</a> statements omit spaces and tabs from the beginning and end of Var2.",
+            \ 'Blocks' :
             \ "{\nzero or more commands\n}\nA pair of braces denotes a block. Blocks are typically used with functions, Else, Loop, While-loop, and IF-commands.",
             \ }
 
