@@ -732,11 +732,12 @@ function! autohotkey#complete(findstart, base) abort
         endwhile
         return 0
     else
-        let g:ahk_complete_dict = []
-        let base = tolower(a:base)
+        let complete_dict = []
         for [k, v] in items(s:complete_dict)
-            call add(g:ahk_complete_dict, {'word': k, 'info': v, 'icase':1})
+            if  k =~ '^' . a:base
+                call add(complete_dict, {'word': k, 'info': v, 'icase':1})
+            endif
         endfor
-        return sort(g:ahk_complete_dict)
+        return sort(complete_dict)
     endif
 endfunction
